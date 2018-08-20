@@ -68,7 +68,7 @@ body {
 	position: relative;
 	font-family: Michroma;
 	width: 95%;
-	background: red;
+	// background: red;
 	margin: 0 auto;
 	padding-top: 50px;
 
@@ -84,6 +84,14 @@ body {
 	.middle-group{
 		padding-top: 15%;
 		// display: flex;
+
+		@include tablet{
+			padding-top: 1%;
+		}
+
+		@include bigger-desktop{
+			padding-top: 15%;
+		}
 
 		.reservations{
 			font-size: 2em;
@@ -142,6 +150,29 @@ body {
 				text-transform: lowercase;
 				color: white;
 			}
+		}
+	}
+
+	.kr-footer{
+		position: relative;
+		right: auto;
+		font-family: $url-font;
+		font-size: 1.5em;
+		text-transform: lowercase;
+		float: right;
+		clear: both;
+		padding-top: 20%;
+
+		@include tablet{
+			padding-top: 8%;
+		}
+
+		@include desktop{
+			padding-top: 5%;
+		}
+
+		span{
+			display: block;
 		}
 	}
 }

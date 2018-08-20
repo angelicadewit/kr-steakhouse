@@ -86,7 +86,6 @@ body {
 	position: relative;
 	font-family: Michroma;
 	width: 95%;
-	background: red;
 	margin: 0 auto;
 	padding-top: 50px;
 }
@@ -102,6 +101,18 @@ body {
 
 .content .middle-group {
 	padding-top: 15%;
+}
+
+@media only screen and (min-width: 640px) {
+	.content .middle-group {
+		padding-top: 1%;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.content .middle-group {
+		padding-top: 15%;
+	}
 }
 
 .content .middle-group .reservations {
@@ -167,6 +178,33 @@ body {
 	text-decoration: none;
 	text-transform: lowercase;
 	color: white;
+}
+
+.content .kr-footer {
+	position: relative;
+	right: auto;
+	font-family: "nimbus-sans";
+	font-size: 1.5em;
+	text-transform: lowercase;
+	float: right;
+	clear: both;
+	padding-top: 20%;
+}
+
+@media only screen and (min-width: 640px) {
+	.content .kr-footer {
+		padding-top: 8%;
+	}
+}
+
+@media only screen and (min-width: 1027px) {
+	.content .kr-footer {
+		padding-top: 5%;
+	}
+}
+
+.content .kr-footer span {
+	display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
